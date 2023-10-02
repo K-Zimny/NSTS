@@ -1,0 +1,83 @@
+/* TODO - Organize. Seperate folders for each comp, sectionm, main,m etc. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #b4a396;
+  margin: 2rem;
+  text-transform: uppercase;
+  font-family: 'Play', sans-serif;
+  font-size: 70px;
+  color: #38e28f;
+  text-shadow: #38e28f 0px 0px 50px;
+  filter: drop-shadow(0px 0px 2px #38e28f) blur(1.6px) brightness(1.1);
+  letter-spacing: -5px;
+  line-height: 70px;
+  background: #ae9688;
+  border-radius: 90px;
+  border: 15px solid black;
+  height: 100vmin;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 3rem;
+  background: black;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 90px;
+}
+
+input {
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Play', sans-serif;
+  font-size: 70px;
+  color: #38e28f;
+  text-shadow: #38e28f 0px 0px 50px;
+  filter: drop-shadow(0px 0px 0px #38e28f) blur(1.2px) brightness(1.1);
+  letter-spacing: -5px;
+  line-height: 70px;
+  background: inherit;
+  outline: none;
+  caret-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: #ff0000;
+  text-shadow: #ff000085 0px 0px 50px;
+  filter: drop-shadow(0px 0px 2px #ff0000) blur(1.6px) brightness(1.1);
+}
+
+/* Animations */
+
+.animate_blink {
+  animation-duration: 1.6s;
+  animation-name: animate_blink;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+  /* animation-direction: alternate; */
+}
+
+@keyframes animate_blink {
+  0% {
+    opacity: 100%;
+  }
+  79% {
+    opacity: 100%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
